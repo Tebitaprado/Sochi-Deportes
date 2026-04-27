@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sochi Deportes - Todo el deporte en un solo lugar. Indumentaria deportiva, accesorios y moda urbana en Argentina." />
+  <meta name="keywords" content="ropa deportiva, indumentaria deportiva, fútbol, running, gym, hockey, Argentina" />
+  <title>Sochi Deportes | Todo el deporte en un solo lugar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="header" id="header">
+    <div class="header-top">
+      <span>🚚 Envíos a todo el país &nbsp;|&nbsp; 📞 Consultá por WhatsApp</span>
+    </div>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#inicio" class="logo">
+          <span class="logo-icon">⚡</span>
+          <div class="logo-text">
+            <span class="logo-main">SOCHI</span>
+            <span class="logo-sub">DEPORTES</span>
+          </div>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#deportes" class="nav-link">Deportes <span class="arrow">▾</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#deportes" data-cat="futbol">⚽ Fútbol</a></li>
+              <li><a href="#deportes" data-cat="hockey">🏑 Hockey</a></li>
+              <li><a href="#deportes" data-cat="running">🏃 Running</a></li>
+              <li><a href="#deportes" data-cat="gym">💪 Gym</a></li>
+              <li><a href="#deportes" data-cat="boxeo">🥊 Boxeo</a></li>
+              <li><a href="#deportes" data-cat="natacion">🏊 Natación</a></li>
+              <li><a href="#deportes" data-cat="voley">🏐 Vóley</a></li>
+              <li><a href="#deportes" data-cat="padel">🎾 Pádel</a></li>
+              <li><a href="#deportes" data-cat="rugby">🏉 Rugby</a></li>
+              <li><a href="#deportes" data-cat="trekking">🥾 Trekking</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#mujeres" class="nav-link">Mujeres <span class="arrow">▾</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#mujeres" data-cat="camperas-w">Camperas</a></li>
+              <li><a href="#mujeres" data-cat="poleras-w">Poleras</a></li>
+              <li><a href="#mujeres" data-cat="invierno-w">Moda Invierno</a></li>
+              <li><a href="#mujeres" data-cat="calzado-w">Calzado</a></li>
+              <li><a href="#mujeres" data-cat="accesorios-w">Accesorios</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#hombres" class="nav-link">Hombres <span class="arrow">▾</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#hombres" data-cat="buzos-h">Buzos</a></li>
+              <li><a href="#hombres" data-cat="pantalones-h">Pantalones</a></li>
+              <li><a href="#hombres" data-cat="camperas-h">Camperas</a></li>
+              <li><a href="#hombres" data-cat="zapatillas-h">Zapatillas</a></li>
+              <li><a href="#hombres" data-cat="accesorios-h">Accesorios</a></li>
+            </ul>
+          </li>
+          <li><a href="#ofertas" class="nav-link ofertas-link">🔥 Ofertas</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ HERO / BANNER ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-slider" id="heroSlider">
+
+      <div class="slide active" style="--slide-bg: linear-gradient(135deg, #0a0a0a 0%, #0d2137 50%, #0a0a0a 100%);">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag fade-up">Nueva Colección 2025</span>
+          <h1 class="slide-title fade-up">
+            TODO EL<br /><em>DEPORTE</em><br />EN UN SOLO<br />LUGAR
+          </h1>
+          <p class="slide-sub fade-up">Indumentaria, accesorios y estilo</p>
+          <div class="slide-btns fade-up">
+            <a href="#productos" class="btn btn-primary">Ver Productos</a>
+            <a href="https://wa.me/5492614000000?text=Hola%20Sochi%20Deportes!%20Quiero%20consultar%20sobre%20sus%20productos." class="btn btn-wa" target="_blank">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.529 5.845L.057 23.571l5.885-1.43A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.883 0-3.648-.507-5.165-1.392l-.371-.22-3.492.849.871-3.393-.242-.382A9.938 9.938 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="slide-visual">
+          <div class="visual-shape s1"></div>
+          <div class="visual-shape s2"></div>
+          <div class="visual-shape s3"></div>
+          <div class="visual-number">25</div>
+        </div>
+      </div>
+
+      <div class="slide" style="--slide-bg: linear-gradient(135deg, #0a0a0a 0%, #1a0a00 50%, #0a0a0a 100%);">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag fade-up">Colección Mujer</span>
+          <h1 class="slide-title fade-up">ESTILO<br /><em>SIN</em><br />LÍMITES</h1>
+          <p class="slide-sub fade-up">Camperas, calzado y accesorios premium</p>
+          <div class="slide-btns fade-up">
+            <a href="#mujeres" class="btn btn-primary">Ver Mujer</a>
+            <a href="https://wa.me/5492614000000?text=Hola!%20Quiero%20consultar%20la%20coleccion%20de%20mujer." class="btn btn-outline" target="_blank">Consultar precio</a>
+          </div>
+        </div>
+        <div class="slide-visual">
+          <div class="visual-shape s1" style="background: #ff6b00;"></div>
+          <div class="visual-shape s2" style="background: #ff8c42;"></div>
+          <div class="visual-shape s3"></div>
+          <div class="visual-number">W</div>
+        </div>
+      </div>
+
+      <div class="slide" style="--slide-bg: linear-gradient(135deg, #0a0a0a 0%, #001a10 50%, #0a0a0a 100%);">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag fade-up">🔥 Ofertas Especiales</span>
+          <h1 class="slide-title fade-up">HASTA<br /><em>50%</em><br />DE<br />DESCUENTO</h1>
+          <p class="slide-sub fade-up">Por tiempo limitado — ¡No te lo pierdas!</p>
+          <div class="slide-btns fade-up">
+            <a href="#ofertas" class="btn btn-primary">Ver Ofertas</a>
+          </div>
+        </div>
+        <div class="slide-visual">
+          <div class="visual-shape s1" style="background: #00c853;"></div>
+          <div class="visual-shape s2" style="background: #69f0ae;"></div>
+          <div class="visual-shape s3"></div>
+          <div class="visual-number">%</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-controls">
+      <button class="hero-prev" id="heroPrev" aria-label="Anterior">&#8592;</button>
+      <div class="hero-dots" id="heroDots">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
+      </div>
+      <button class="hero-next" id="heroNext" aria-label="Siguiente">&#8594;</button>
+    </div>
+
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAR ============ -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-num" data-target="5000">0</span><span>+</span>
+        <span class="stat-label">Productos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="10">0</span><span>+</span>
+        <span class="stat-label">Deportes</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="3000">0</span><span>+</span>
+        <span class="stat-label">Clientes</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="5">0</span><span> años</span>
+        <span class="stat-label">En el mercado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORÍAS DEPORTES ============ -->
+  <section class="section" id="deportes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestros Deportes</span>
+        <h2 class="section-title">¿CUÁL ES <em>TU</em> DEPORTE?</h2>
+        <p class="section-desc">Encontrá todo lo que necesitás para tu disciplina favorita</p>
+      </div>
+      <div class="sports-grid">
+        <div class="sport-card" data-sport="Fútbol">
+          <div class="sport-icon">⚽</div>
+          <div class="sport-info">
+            <h3>Fútbol</h3>
+            <span>Camisetas, shorts, medias, botines</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Fútbol')">Consultar</button>
+        </div>
+        <div class="sport-card" data-sport="Hockey">
+          <div class="sport-icon">🏑</div>
+          <div class="sport-info">
+            <h3>Hockey</h3>
+            <span>Polleras, medias, protecciones</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Hockey')">Consultar</button>
+        </div>
+        <div class="sport-card" data-sport="Running">
+          <div class="sport-icon">🏃</div>
+          <div class="sport-info">
+            <h3>Running</h3>
+            <span>Calzado, remeras técnicas, lycra</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Running')">Consultar</button>
+        </div>
+        <div class="sport-card featured" data-sport="Gym">
+          <div class="sport-icon">💪</div>
+          <div class="sport-info">
+            <h3>Gym</h3>
+            <span>Musculosas, leggins, calzado</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Gym')">Consultar</button>
+        </div>
+        <div class="sport-card" data-sport="Boxeo">
+          <div class="sport-icon">🥊</div>
+          <div class="sport-info">
+            <h3>Boxeo</h3>
+            <span>Guantes, vendas, short</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Boxeo')">Consultar</button>
+        </div>
+        <div class="sport-card" data-sport="Natación">
+          <div class="sport-icon">🏊</div>
+          <div class="sport-info">
+            <h3>Natación</h3>
+            <span>Mallas, antiparras, gorros</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Natación')">Consultar</button>
+        </div>
+        <div class="sport-card" data-sport="Vóley">
+          <div class="sport-icon">🏐</div>
+          <div class="sport-info">
+            <h3>Vóley</h3>
+            <span>Camisetas, rodilleras, zapatillas</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Vóley')">Consultar</button>
+        </div>
+        <div class="sport-card" data-sport="Pádel">
+          <div class="sport-icon">🎾</div>
+          <div class="sport-info">
+            <h3>Pádel</h3>
+            <span>Ropa técnica, calzado, accesorios</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Pádel')">Consultar</button>
+        </div>
+        <div class="sport-card" data-sport="Rugby">
+          <div class="sport-icon">🏉</div>
+          <div class="sport-info">
+            <h3>Rugby</h3>
+            <span>Camisetas, shorts, protecciones</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Rugby')">Consultar</button>
+        </div>
+        <div class="sport-card" data-sport="Trekking">
+          <div class="sport-icon">🥾</div>
+          <div class="sport-info">
+            <h3>Trekking</h3>
+            <span>Botas, mochila, ropa técnica</span>
+          </div>
+          <button class="sport-cta" onclick="consultarWA('Trekking')">Consultar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTOS DESTACADOS ============ -->
+  <section class="section section-dark" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo más vendido</span>
+        <h2 class="section-title">PRODUCTOS <em>DESTACADOS</em></h2>
+        <p class="section-desc">Los favoritos de nuestra comunidad deportiva</p>
+      </div>
+
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">Todos</button>
+        <button class="filter-tab" data-filter="hombre">Hombre</button>
+        <button class="filter-tab" data-filter="mujer">Mujer</button>
+        <button class="filter-tab" data-filter="ofertas">Ofertas</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-category="hombre">
+          <div class="product-img">
+            <div class="product-placeholder" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+              <span>👟</span>
+            </div>
+            <div class="product-badges">
+              <span class="badge new">Nuevo</span>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-wa" onclick="consultarProducto('Zapatillas Running Pro')">
+                💬 Consultar precio
+              </button>
+            </div>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Running · Hombre</span>
+            <h3 class="product-name">Zapatillas Running Pro</h3>
+            <div class="product-price">
+              <span class="price-current">Consultar precio</span>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="consultarProducto('Zapatillas Running Pro')">Consultar por WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="mujer">
+          <div class="product-img">
+            <div class="product-placeholder" style="background: linear-gradient(135deg, #2d1b3d, #1a0f2e);">
+              <span>🧥</span>
+            </div>
+            <div class="product-badges">
+              <span class="badge hot">Top</span>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-wa" onclick="consultarProducto('Campera Deportiva Mujer')">
+                💬 Consultar precio
+              </button>
+            </div>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Camperas · Mujer</span>
+            <h3 class="product-name">Campera Deportiva Mujer</h3>
+            <div class="product-price">
+              <span class="price-current">Consultar precio</span>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="consultarProducto('Campera Deportiva Mujer')">Consultar por WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="hombre ofertas">
+          <div class="product-img">
+            <div class="product-placeholder" style="background: linear-gradient(135deg, #0d3b00, #1a5c00);">
+              <span>⚽</span>
+            </div>
+            <div class="product-badges">
+              <span class="badge sale">-30%</span>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-wa" onclick="consultarProducto('Kit Fútbol Completo')">
+                💬 Consultar precio
+              </button>
+            </div>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Fútbol · Hombre</span>
+            <h3 class="product-name">Kit Fútbol Completo</h3>
+            <div class="product-price">
+              <span class="price-current">Consultar precio</span>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="consultarProducto('Kit Fútbol Completo')">Consultar por WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="mujer">
+          <div class="product-img">
+            <div class="product-placeholder" style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d);">
+              <span>🩱</span>
+            </div>
+            <div class="product-badges">
+              <span class="badge new">Nuevo</span>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-wa" onclick="consultarProducto('Set Gym Mujer Premium')">
+                💬 Consultar precio
+              </button>
+            </div>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Gym · Mujer</span>
+            <h3 class="product-name">Set Gym Mujer Premium</h3>
+            <div class="product-price">
+              <span class="price-current">Consultar precio</span>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="consultarProducto('Set Gym Mujer Premium')">Consultar por WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="hombre">
+          <div class="product-img">
+            <div class="product-placeholder" style="background: linear-gradient(135deg, #001833, #002d5c);">
+              <span>🧢</span>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-wa" onclick="consultarProducto('Buzo Deportivo Hombre')">
+                💬 Consultar precio
+              </button>
+            </div>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Gym · Hombre</span>
+            <h3 class="product-name">Buzo Deportivo Hombre</h3>
+            <div class="product-price">
+              <span class="price-current">Consultar precio</span>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="consultarProducto('Buzo Deportivo Hombre')">Consultar por WhatsApp</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="mujer ofertas">
+          <div class="product-img">
+            <div class="product-placeholder" style="background: linear-gradient(135deg, #330a00, #5c1a00);">
+              <span>👟</span>
+            </div>
+            <div class="product-badges">
+              <span class="badge sale">-20%</span>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-wa" onclick="consultarProducto('Zapatillas Training Mujer')">
+                💬 Consultar precio
+              </button>
+            </div>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Calzado · Mujer</span>
+            <h3 class="product-name">Zapatillas Training Mujer</h3>
+            <div class="product-price">
+              <span class="price-current">Consultar precio</span>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="consultarProducto('Zapatillas Training Mujer')">Consultar por WhatsApp</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="https://wa.me/5492614000000?text=Hola!%20Quiero%20ver%20el%20catálogo%20completo%20de%20Sochi%20Deportes." class="btn btn-primary btn-lg" target="_blank">
+          Ver Catálogo Completo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECCIÓN MUJER ============ -->
+  <section class="section" id="mujeres">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Colección Mujer</span>
+        <h2 class="section-title">MODA Y <em>PERFORMANCE</em></h2>
+        <p class="section-desc">Diseñado para rendir al máximo con el mejor estilo</p>
+      </div>
+      <div class="gender-grid">
+        <div class="gender-card" onclick="consultarWA('Camperas Mujer')">
+          <div class="gender-icon">🧥</div>
+          <h3>Camperas</h3>
+          <p>Impermeables, térmicas y urbanas</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+        <div class="gender-card" onclick="consultarWA('Poleras Mujer')">
+          <div class="gender-icon">👕</div>
+          <h3>Poleras</h3>
+          <p>Técnicas, termofusionadas y de algodón</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+        <div class="gender-card featured" onclick="consultarWA('Moda Invierno Mujer')">
+          <div class="gender-icon">❄️</div>
+          <h3>Moda Invierno</h3>
+          <p>La colección más completa para el frío</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+        <div class="gender-card" onclick="consultarWA('Calzado Mujer')">
+          <div class="gender-icon">👟</div>
+          <h3>Calzado</h3>
+          <p>Running, training y lifestyle</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+        <div class="gender-card" onclick="consultarWA('Accesorios Mujer')">
+          <div class="gender-icon">🎽</div>
+          <h3>Accesorios</h3>
+          <p>Mochilas, gorros, medias y más</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECCIÓN HOMBRE ============ -->
+  <section class="section section-dark" id="hombres">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Colección Hombre</span>
+        <h2 class="section-title">EQUIPATE <em>PARA GANAR</em></h2>
+        <p class="section-desc">Todo lo que necesitás para entrenar y salir a la calle</p>
+      </div>
+      <div class="gender-grid">
+        <div class="gender-card" onclick="consultarWA('Buzos Hombre')">
+          <div class="gender-icon">🧥</div>
+          <h3>Buzos</h3>
+          <p>Con capucha, sin capucha, urban</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+        <div class="gender-card featured" onclick="consultarWA('Pantalones Hombre')">
+          <div class="gender-icon">👖</div>
+          <h3>Pantalones</h3>
+          <p>Training, jogger y deportivo</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+        <div class="gender-card" onclick="consultarWA('Camperas Hombre')">
+          <div class="gender-icon">🥋</div>
+          <h3>Camperas</h3>
+          <p>Cortaviento, rompeviento, técnicas</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+        <div class="gender-card" onclick="consultarWA('Zapatillas Hombre')">
+          <div class="gender-icon">👟</div>
+          <h3>Zapatillas</h3>
+          <p>Running, fútbol, training y lifestyle</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+        <div class="gender-card" onclick="consultarWA('Accesorios Hombre')">
+          <div class="gender-icon">🧤</div>
+          <h3>Accesorios</h3>
+          <p>Guantes, mochilas, gorras y medias</p>
+          <span class="gender-cta">Ver más →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BANNER PROMO ============ -->
+  <section class="promo-banner">
+    <div class="promo-content">
+      <span class="promo-tag">Oferta Especial</span>
+      <h2>LLEVATE TU EQUIPAMIENTO<br /><em>HOY MISMO</em></h2>
+      <p>Consultá disponibilidad y precio directamente por WhatsApp.<br />Envíos a todo el país.</p>
+      <a href="https://wa.me/5492614000000?text=Hola%20Sochi%20Deportes!%20Quiero%20consultar%20un%20producto." class="btn btn-white" target="_blank">
+        📲 Consultar ahora
+      </a>
+    </div>
+    <div class="promo-shapes">
+      <div class="ps1"></div>
+      <div class="ps2"></div>
+      <div class="ps3"></div>
+    </div>
+  </section>
+
+  <!-- ============ OFERTAS ============ -->
+  <section class="section" id="ofertas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: #ff4444;">🔥 Ofertas Especiales</span>
+        <h2 class="section-title">NO TE <em>LO PIERDAS</em></h2>
+        <p class="section-desc">Descuentos por tiempo limitado en los mejores productos</p>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card big" onclick="consultarWA('Oferta Kit Fútbol Completo')">
+          <div class="offer-badge">-30%</div>
+          <div class="offer-icon">⚽</div>
+          <div class="offer-info">
+            <h3>Kit Fútbol Completo</h3>
+            <p>Camiseta + short + medias. ¡Todo junto!</p>
+            <span class="offer-cta">Consultar precio →</span>
+          </div>
+        </div>
+        <div class="offer-card" onclick="consultarWA('Oferta Set Gym Mujer')">
+          <div class="offer-badge">-25%</div>
+          <div class="offer-icon">💪</div>
+          <div class="offer-info">
+            <h3>Set Gym Mujer</h3>
+            <p>Top + leggins deportivo</p>
+            <span class="offer-cta">Consultar →</span>
+          </div>
+        </div>
+        <div class="offer-card" onclick="consultarWA('Oferta Zapatillas Running')">
+          <div class="offer-badge">-20%</div>
+          <div class="offer-icon">👟</div>
+          <div class="offer-info">
+            <h3>Zapatillas Running</h3>
+            <p>Hombre y mujer, todos los talles</p>
+            <span class="offer-cta">Consultar →</span>
+          </div>
+        </div>
+        <div class="offer-card" onclick="consultarWA('Oferta Camperas Invierno')">
+          <div class="offer-badge">-15%</div>
+          <div class="offer-icon">🧥</div>
+          <div class="offer-info">
+            <h3>Camperas Invierno</h3>
+            <p>Colección completa con descuento</p>
+            <span class="offer-cta">Consultar →</span>
+          </div>
+        </div>
+        <div class="offer-card" onclick="consultarWA('Oferta Set Hockey')">
+          <div class="offer-badge">-20%</div>
+          <div class="offer-icon">🏑</div>
+          <div class="offer-info">
+            <h3>Set Hockey</h3>
+            <p>Todo para la cancha en un paquete</p>
+            <span class="offer-cta">Consultar →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARCAS ============ -->
+  <section class="brands-bar">
+    <div class="brands-container">
+      <span class="brands-label">Trabajamos con las mejores marcas</span>
+      <div class="brands-scroll">
+        <div class="brand-item">ADIDAS</div>
+        <div class="brand-item">NIKE</div>
+        <div class="brand-item">PUMA</div>
+        <div class="brand-item">UNDER ARMOUR</div>
+        <div class="brand-item">TOPPER</div>
+        <div class="brand-item">LE COQ</div>
+        <div class="brand-item">UMBRO</div>
+        <div class="brand-item">KAPPA</div>
+        <div class="brand-item">REEBOK</div>
+        <div class="brand-item">ADIDAS</div>
+        <div class="brand-item">NIKE</div>
+        <div class="brand-item">PUMA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section section-dark" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">¿QUERÉS <em>CONSULTARNOS</em>?</h2>
+        <p class="section-desc">Estamos para ayudarte. Escribinos y respondemos rápido.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <p>Mendoza, Argentina</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>+54 9 261 400-0000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <p>info@sochideportes.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <strong>Horario</strong>
+              <p>Lun–Vie 9:00–19:00 · Sáb 9:00–13:00</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              Instagram
+            </a>
+            <a href="https://wa.me/5492614000000" class="social-btn wa-social" target="_blank" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.529 5.845L.057 23.571l5.885-1.43A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.883 0-3.648-.507-5.165-1.392l-.371-.22-3.492.849.871-3.393-.242-.382A9.938 9.938 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+54 9 261 ..." />
+          </div>
+          <div class="form-group">
+            <label for="deporte">¿Qué deporte practicás?</label>
+            <select id="deporte" name="deporte">
+              <option value="">Seleccioná un deporte</option>
+              <option>Fútbol</option>
+              <option>Hockey</option>
+              <option>Running</option>
+              <option>Gym</option>
+              <option>Boxeo</option>
+              <option>Natación</option>
+              <option>Vóley</option>
+              <option>Pádel</option>
+              <option>Rugby</option>
+              <option>Trekking</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Tu consulta *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Enviar consulta</button>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            ✅ ¡Gracias! Nos comunicaremos pronto. También podés escribirnos por WhatsApp para una respuesta inmediata.
+          </div>
+        </form>
+      </div>
+
+      <!-- Mapa placeholder -->
+      <div class="map-section">
+        <div class="map-placeholder">
+          <div class="map-content">
+            <span class="map-icon">📍</span>
+            <h3>Encontranos en Mendoza</h3>
+            <p>Visitá nuestra tienda o contactanos para coordinar tu compra</p>
+            <a href="https://maps.google.com/?q=Mendoza+Argentina" target="_blank" class="btn btn-outline">
+              Abrir en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#inicio" class="logo footer-logo">
+              <span class="logo-icon">⚡</span>
+              <div class="logo-text">
+                <span class="logo-main">SOCHI</span>
+                <span class="logo-sub">DEPORTES</span>
+              </div>
+            </a>
+            <p>Todo el deporte en un solo lugar. Indumentaria, accesorios y estilo para cada disciplina.</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="https://wa.me/5492614000000" aria-label="WhatsApp" target="_blank">WA</a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Categorías</h4>
+            <ul>
+              <li><a href="#deportes">Fútbol</a></li>
+              <li><a href="#deportes">Running</a></li>
+              <li><a href="#deportes">Gym</a></li>
+              <li><a href="#deportes">Hockey</a></li>
+              <li><a href="#deportes">Pádel</a></li>
+              <li><a href="#deportes">Trekking</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Colecciones</h4>
+            <ul>
+              <li><a href="#mujeres">Mujer</a></li>
+              <li><a href="#hombres">Hombre</a></li>
+              <li><a href="#ofertas">Ofertas</a></li>
+              <li><a href="#productos">Novedades</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Contacto</h4>
+            <ul>
+              <li>📍 Mendoza, Argentina</li>
+              <li>📱 +54 9 261 400-0000</li>
+              <li>📧 info@sochideportes.com</li>
+              <li>🕐 Lun–Vie 9–19 · Sáb 9–13</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Sochi Deportes. Todos los derechos reservados. · Mendoza, Argentina</p>
+        <p class="footer-future">
+          🚀 Próximamente: Carrito de compras y pagos online con MercadoPago
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  <a href="https://wa.me/5492614000000?text=Hola%20Sochi%20Deportes!%20Quiero%20consultar%20sobre%20sus%20productos." 
+     class="whatsapp-float" id="waFloat" target="_blank" aria-label="Contactar por WhatsApp">
+    <div class="wa-pulse"></div>
+    <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.529 5.845L.057 23.571l5.885-1.43A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.883 0-3.648-.507-5.165-1.392l-.371-.22-3.492.849.871-3.393-.242-.382A9.938 9.938 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+    <span class="wa-tooltip">¡Consultanos!</span>
+  </a>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
